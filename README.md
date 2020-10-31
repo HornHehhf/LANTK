@@ -22,7 +22,7 @@ neural-tangents
 
 ## Code Organization
 
-The code is organized as follows:\
+The code is organized as follows:
 - CNN.py (CNN for binary classification)
 - ntk_google.py (CNTK for binary classification)
 - ntl_google.py (LANTK-HR for binary classification)
@@ -43,7 +43,7 @@ sh run_cnn_experiments.sh
 sh run_ntk_google_experiments.sh
 sh run_ntl_google_experiments.sh
 ```
-Note that the commands are similar for CNN/CNTK/LANTK-HR (also 2-layer NNs) on multi-class classification.
+Note that these commands are similar for CNN/CNTK/LANTK-HR on multi-class classification and NN/NTK/LANTK-HR for 2-layer NNs.
 
 To reproduce the experiments for LANTK-NTH:
 ```
@@ -52,6 +52,6 @@ python ntl_simple_accelerate.py neg=3 pos=5 (an example)
 
 To reproduce the experiments for dynamics of local elasticity over training:
 ```
-CUDA_VISIBLE_DEVICES=1 python MSCOCO/labels_dynamic.py dataset=MSCOCO method_option=kernel \
+CUDA_VISIBLE_DEVICES=1 python MSCOCO/labels_dynamic.py dataset=MSCOCO method_option=kernel 
 model_option=MLPNet loss_option=MSE pos_one=dog pos_two=bench neg_one=cat neg_two=chair label_system=one
 ```
