@@ -17,8 +17,7 @@ If you use this code for your work, please cite
 ## Installing Dependencies
 Use virtual environment tools (e.g miniconda) to install packages and run experiments\
 python>=3.6\
-[pytorch](https://pytorch.org)\
-neural-tangents
+pip install -r requirements.txt
 
 ## Code Organization
 
